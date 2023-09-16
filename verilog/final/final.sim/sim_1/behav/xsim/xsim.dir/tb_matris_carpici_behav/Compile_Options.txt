@@ -1,0 +1,1 @@
+-wto "b538f6131b4d490195d581e44795d343" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_matris_carpici_behav" "xil_defaultlib.tb_matris_carpici" "xil_defaultlib.glbl" -log "elaborate.log" 

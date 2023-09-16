@@ -1,0 +1,52 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Jul 30 10:16:43 2020
+| Host         : DESKTOP-KN9PHCB running 64-bit major release  (build 9200)
+| Command      : report_methodology -file aes_wrapper_methodology_drc_routed.rpt -pb aes_wrapper_methodology_drc_routed.pb -rpx aes_wrapper_methodology_drc_routed.rpx
+| Design       : aes_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+------------------+-------------------------------------------+------------+
+| Rule      | Severity         | Description                               | Violations |
++-----------+------------------+-------------------------------------------+------------+
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin | 1          |
+| TIMING-18 | Warning          | Missing input or output delay             | 1          |
+| TIMING-23 | Warning          | Combinational loop found                  | 1          |
++-----------+------------------+-------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock cw_i/inst/clk_in1 is created on an inappropriate internal pin cw_i/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on bitti relative to clock(s) cw_i/inst/clk_in1
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between cw_i_i_1/I0 and cw_i_i_1/O to disable the timing loop
+Related violations: <none>
+
+

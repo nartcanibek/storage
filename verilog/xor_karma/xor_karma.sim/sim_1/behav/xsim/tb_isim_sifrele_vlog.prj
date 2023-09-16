@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../xor_karma.srcs/sources_1/new/isim_sifrele.v" \
+"../../../../xor_karma.srcs/sources_1/new/xor_karma.v" \
+"../../../../xor_karma.srcs/sim_1/new/tb_isim_sifrele.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

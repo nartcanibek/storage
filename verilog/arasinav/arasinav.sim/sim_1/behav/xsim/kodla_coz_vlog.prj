@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../arasinav.srcs/sources_1/new/kod_cozucu.v" \
+"../../../../arasinav.srcs/sources_1/new/kodlayici.v" \
+"../../../../arasinav.srcs/sources_1/new/kodla_coz.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

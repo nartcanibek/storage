@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../aes_engine_wrapperr.srcs/sources_1/ip/clk_wiz_1" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/ip/clk_wiz_1/clk_wiz_clk_wiz.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/ip/clk_wiz_1/clk_wiz.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/KeyGeneration.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/aes_engine.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/mixcolumn.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/roundlast.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/rounds.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/sbox.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/shiftrow.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/subbytes.v" \
+"../../../../aes_engine_wrapperr.srcs/sources_1/new/aes_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 13 21:01:31 2020
+# Process ID: 15736
+# Current directory: C:/Users/nartc/Desktop/verilog kodlar/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9188 C:\Users\nartc\Desktop\verilog kodlar\lab2\lab2.xpr
+# Log file: C:/Users/nartc/Desktop/verilog kodlar/lab2/vivado.log
+# Journal file: C:/Users/nartc/Desktop/verilog kodlar/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/nartc/Desktop/verilog kodlar/lab2/lab2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_lab2_f.tcl
+close_sim
+close_project
+open_project {C:/Users/nartc/Desktop/verilog kodlar/deneme/deneme.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project deneme2 {C:/Users/nartc/Desktop/verilog kodlar/deneme2} -part xc7a35tcpg236-1
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/deneme2/deneme2.srcs/sources_1/new
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/deneme2/deneme2.srcs/sources_1/new
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/deneme2/deneme2.srcs/sources_1/new
+file mkdir {C:/Users/nartc/Desktop/verilog kodlar/deneme2/deneme2.srcs/sources_1/new}
+close [ open {C:/Users/nartc/Desktop/verilog kodlar/deneme2/deneme2.srcs/sources_1/new/deneme2.v} w ]
+add_files {{C:/Users/nartc/Desktop/verilog kodlar/deneme2/deneme2.srcs/sources_1/new/deneme2.v}}
+update_compile_order -fileset sources_1
+close_project
+create_project odev1_a {C:/Users/nartc/Desktop/verilog kodlar/odev1_a} -part xc7a35tcpg236-1
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/odev1_a/odev1_a.srcs/sources_1/new
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/odev1_a/odev1_a.srcs/sources_1/new
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/odev1_a/odev1_a.srcs/sources_1/new
+file mkdir {C:/Users/nartc/Desktop/verilog kodlar/odev1_a/odev1_a.srcs/sources_1/new}
+close [ open {C:/Users/nartc/Desktop/verilog kodlar/odev1_a/odev1_a.srcs/sources_1/new/odev1_a.v} w ]
+add_files {{C:/Users/nartc/Desktop/verilog kodlar/odev1_a/odev1_a.srcs/sources_1/new/odev1_a.v}}
+update_compile_order -fileset sources_1
+close_project
+create_project odev1_b {C:/Users/nartc/Desktop/verilog kodlar/odev1_b} -part xc7a35tcpg236-1
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/odev1_b/odev1_b.srcs/sources_1/new
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/odev1_b/odev1_b.srcs/sources_1/new
+file mkdir C:/Users/nartc/Desktop/verilog kodlar/odev1_b/odev1_b.srcs/sources_1/new
+file mkdir {C:/Users/nartc/Desktop/verilog kodlar/odev1_b/odev1_b.srcs/sources_1/new}
+close [ open {C:/Users/nartc/Desktop/verilog kodlar/odev1_b/odev1_b.srcs/sources_1/new/odev1_b.v} w ]
+add_files {{C:/Users/nartc/Desktop/verilog kodlar/odev1_b/odev1_b.srcs/sources_1/new/odev1_b.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

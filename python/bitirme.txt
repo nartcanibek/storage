@@ -1,0 +1,15 @@
+POST /upload HTTP/1.1
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 37345b15-a2dd-46a9-9837-1545392993cc
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=--------------------------078738514944724206460108
+Content-Length: 230
+
+----------------------------078738514944724206460108
+Content-Disposition: form-data; name="bitirme"; filename="bitirme.txt"
+Content-Type: text/plain
+

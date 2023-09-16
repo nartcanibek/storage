@@ -1,0 +1,720 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 30 10:14:00 2020
+# Process ID: 2040
+# Current directory: C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.runs/synth_1
+# Command line: vivado.exe -log aes_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_wrapper.tcl
+# Log file: C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.runs/synth_1/aes_wrapper.vds
+# Journal file: C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source aes_wrapper.tcl -notrace
+Command: synth_design -top aes_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17884 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 874.535 ; gain = 236.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes_wrapper' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:3]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:27]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:28]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.runs/synth_1/.Xil/Vivado-2040-DESKTOP-KN9PHCB/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.runs/synth_1/.Xil/Vivado-2040-DESKTOP-KN9PHCB/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'aes_engine' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_engine.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rounds' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-6157] synthesizing module 'KeyGeneration' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/KeyGeneration.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (2#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'KeyGeneration' (3#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/KeyGeneration.v:3]
+INFO: [Synth 8-6157] synthesizing module 'subbytes' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes' (4#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow' (5#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn' (6#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rounds' (7#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rounndlast' [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/roundlast.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rounndlast' (8#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/roundlast.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'aes_engine' (9#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_engine.v:3]
+WARNING: [Synth 8-6014] Unused sequential element yurutme_zamani_reg was removed.  [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:76]
+WARNING: [Synth 8-6014] Unused sequential element saymaya_basla_reg was removed.  [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'aes_wrapper' (10#1) [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/new/aes_wrapper.v:3]
+WARNING: [Synth 8-3331] design rounndlast has unconnected port clk
+WARNING: [Synth 8-3331] design rounds has unconnected port clk
+WARNING: [Synth 8-3331] design aes_engine has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 949.535 ; gain = 311.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 949.535 ; gain = 311.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 949.535 ; gain = 311.055
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 949.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'cw_i'
+Finished Parsing XDC File [c:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'cw_i'
+Parsing XDC File [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/constrs_1/new/project.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/constrs_1/new/project.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/constrs_1/new/project.xdc:3]
+Finished Parsing XDC File [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/constrs_1/new/project.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/constrs_1/new/project.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/aes_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.srcs/constrs_1/new/project.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/aes_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/aes_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1076.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1076.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.469 ; gain = 437.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.469 ; gain = 437.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cw_i. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.469 ; gain = 437.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1076.469 ; gain = 437.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   3 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 30    
+	   2 Input      1 Bit         XORs := 531   
+	   3 Input      1 Bit         XORs := 549   
+	   5 Input      1 Bit         XORs := 243   
+	   4 Input      1 Bit         XORs := 414   
+	   6 Input      1 Bit         XORs := 72    
++---Registers : 
+	              128 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aes_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+Module KeyGeneration 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+Module mixcolumn 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 59    
+	   3 Input      1 Bit         XORs := 61    
+	   5 Input      1 Bit         XORs := 27    
+	   4 Input      1 Bit         XORs := 46    
+	   6 Input      1 Bit         XORs := 8     
+Module rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module rounndlast 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module aes_engine 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design rounndlast has unconnected port clk
+WARNING: [Synth 8-3331] design rounds has unconnected port clk
+WARNING: [Synth 8-3331] design aes_engine has unconnected port rst
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1076.469 ; gain = 437.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sbox        | c          | 256x8         | LUT            | 
+|rounds      | t0/a4/c    | 256x8         | LUT            | 
+|rounds      | t0/a3/c    | 256x8         | LUT            | 
+|rounds      | t0/a2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x16/c   | 256x8         | LUT            | 
+|rounds      | t1/x14/c   | 256x8         | LUT            | 
+|rounds      | t1/x13/c   | 256x8         | LUT            | 
+|rounds      | t1/x12/c   | 256x8         | LUT            | 
+|rounds      | t1/x11/c   | 256x8         | LUT            | 
+|rounds      | t1/x10/c   | 256x8         | LUT            | 
+|rounds      | t1/x9/c    | 256x8         | LUT            | 
+|rounds      | t1/x8/c    | 256x8         | LUT            | 
+|rounds      | t1/x7/c    | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x5/c    | 256x8         | LUT            | 
+|rounds      | t1/x4/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t1/x1/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounds      | t0/a4/c    | 256x8         | LUT            | 
+|rounds      | t0/a3/c    | 256x8         | LUT            | 
+|rounds      | t0/a2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x16/c   | 256x8         | LUT            | 
+|rounds      | t1/x14/c   | 256x8         | LUT            | 
+|rounds      | t1/x13/c   | 256x8         | LUT            | 
+|rounds      | t1/x12/c   | 256x8         | LUT            | 
+|rounds      | t1/x11/c   | 256x8         | LUT            | 
+|rounds      | t1/x10/c   | 256x8         | LUT            | 
+|rounds      | t1/x9/c    | 256x8         | LUT            | 
+|rounds      | t1/x8/c    | 256x8         | LUT            | 
+|rounds      | t1/x7/c    | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x5/c    | 256x8         | LUT            | 
+|rounds      | t1/x4/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t1/x1/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x12/c   | 256x8         | LUT            | 
+|rounds      | t1/x7/c    | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x5/c    | 256x8         | LUT            | 
+|rounds      | t1/x4/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t1/x1/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounds      | t0/a4/c    | 256x8         | LUT            | 
+|rounds      | t0/a2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x16/c   | 256x8         | LUT            | 
+|rounds      | t1/x14/c   | 256x8         | LUT            | 
+|rounds      | t1/x13/c   | 256x8         | LUT            | 
+|rounds      | t1/x12/c   | 256x8         | LUT            | 
+|rounds      | t1/x10/c   | 256x8         | LUT            | 
+|rounds      | t1/x9/c    | 256x8         | LUT            | 
+|rounds      | t1/x8/c    | 256x8         | LUT            | 
+|rounds      | t1/x7/c    | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x4/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t1/x1/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounds      | t0/a4/c    | 256x8         | LUT            | 
+|rounds      | t0/a3/c    | 256x8         | LUT            | 
+|rounds      | t0/a2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x16/c   | 256x8         | LUT            | 
+|rounds      | t1/x14/c   | 256x8         | LUT            | 
+|rounds      | t1/x13/c   | 256x8         | LUT            | 
+|rounds      | t1/x11/c   | 256x8         | LUT            | 
+|rounds      | t1/x10/c   | 256x8         | LUT            | 
+|rounds      | t1/x9/c    | 256x8         | LUT            | 
+|rounds      | t1/x8/c    | 256x8         | LUT            | 
+|rounds      | t1/x7/c    | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x5/c    | 256x8         | LUT            | 
+|rounds      | t1/x4/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t1/x1/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounds      | t0/a4/c    | 256x8         | LUT            | 
+|rounds      | t0/a3/c    | 256x8         | LUT            | 
+|rounds      | t0/a2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x16/c   | 256x8         | LUT            | 
+|rounds      | t1/x14/c   | 256x8         | LUT            | 
+|rounds      | t1/x13/c   | 256x8         | LUT            | 
+|rounds      | t1/x12/c   | 256x8         | LUT            | 
+|rounds      | t1/x11/c   | 256x8         | LUT            | 
+|rounds      | t1/x10/c   | 256x8         | LUT            | 
+|rounds      | t1/x9/c    | 256x8         | LUT            | 
+|rounds      | t1/x8/c    | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x5/c    | 256x8         | LUT            | 
+|rounds      | t1/x4/c    | 256x8         | LUT            | 
+|rounds      | t1/x3/c    | 256x8         | LUT            | 
+|rounds      | t1/x2/c    | 256x8         | LUT            | 
+|rounds      | t1/x1/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounds      | t0/a2/c    | 256x8         | LUT            | 
+|rounds      | t0/a1/c    | 256x8         | LUT            | 
+|rounds      | t1/x12/c   | 256x8         | LUT            | 
+|rounds      | t1/x10/c   | 256x8         | LUT            | 
+|rounds      | t1/x6/c    | 256x8         | LUT            | 
+|rounds      | t1/x5/c    | 256x8         | LUT            | 
+|rounds      | t1/x0/c    | 256x8         | LUT            | 
+|rounndlast  | t1/x16/c   | 256x8         | LUT            | 
+|rounndlast  | t1/x14/c   | 256x8         | LUT            | 
+|rounndlast  | t1/x13/c   | 256x8         | LUT            | 
+|rounndlast  | t1/x12/c   | 256x8         | LUT            | 
+|rounndlast  | t1/x11/c   | 256x8         | LUT            | 
+|rounndlast  | t1/x10/c   | 256x8         | LUT            | 
+|rounndlast  | t1/x9/c    | 256x8         | LUT            | 
+|rounndlast  | t1/x8/c    | 256x8         | LUT            | 
+|rounndlast  | t1/x5/c    | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1111.203 ; gain = 472.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'clk0_inferred/i_0' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1117.277 ; gain = 478.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_8111' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_8111' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_8111' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 1268.816 ; gain = 630.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |LUT1    |    15|
+|3     |LUT2    |   621|
+|4     |LUT3    |   465|
+|5     |LUT4    |   198|
+|6     |LUT5    |   333|
+|7     |LUT6    |  7299|
+|8     |MUXF7   |  2824|
+|9     |MUXF8   |  1324|
+|10    |FDRE    |   135|
+|11    |OBUF    |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------+------------------+------+
+|      |Instance       |Module            |Cells |
++------+---------------+------------------+------+
+|1     |top            |                  | 13217|
+|2     |  aes_engine_i |aes_engine        | 13068|
+|3     |    r1         |rounds            |  2786|
+|4     |      t1       |subbytes_203      |  2786|
+|5     |        x0     |sbox_204          |   245|
+|6     |        x1     |sbox_205          |   120|
+|7     |        x10    |sbox_206          |   239|
+|8     |        x11    |sbox_207          |   113|
+|9     |        x12    |sbox_208          |   123|
+|10    |        x13    |sbox_209          |   233|
+|11    |        x14    |sbox_210          |   112|
+|12    |        x16    |sbox_211          |   162|
+|13    |        x2     |sbox_212          |   243|
+|14    |        x3     |sbox_213          |   121|
+|15    |        x4     |sbox_214          |   116|
+|16    |        x5     |sbox_215          |   283|
+|17    |        x6     |sbox_216          |   124|
+|18    |        x7     |sbox_217          |   283|
+|19    |        x8     |sbox_218          |   153|
+|20    |        x9     |sbox_219          |   116|
+|21    |    r10        |rounndlast        |   736|
+|22    |      t0       |KeyGeneration_181 |    32|
+|23    |        a1     |sbox_199          |     8|
+|24    |        a2     |sbox_200          |     8|
+|25    |        a3     |sbox_201          |     8|
+|26    |        a4     |sbox_202          |     8|
+|27    |      t1       |subbytes_182      |   704|
+|28    |        x0     |sbox_183          |    48|
+|29    |        x1     |sbox_184          |    40|
+|30    |        x10    |sbox_185          |    48|
+|31    |        x11    |sbox_186          |    40|
+|32    |        x12    |sbox_187          |    40|
+|33    |        x13    |sbox_188          |    40|
+|34    |        x14    |sbox_189          |    48|
+|35    |        x16    |sbox_190          |    48|
+|36    |        x2     |sbox_191          |    40|
+|37    |        x3     |sbox_192          |    48|
+|38    |        x4     |sbox_193          |    48|
+|39    |        x5     |sbox_194          |    48|
+|40    |        x6     |sbox_195          |    40|
+|41    |        x7     |sbox_196          |    40|
+|42    |        x8     |sbox_197          |    40|
+|43    |        x9     |sbox_198          |    48|
+|44    |    r2         |rounds_0          |  6250|
+|45    |      t0       |KeyGeneration_159 |  5866|
+|46    |        a1     |sbox_177          |   912|
+|47    |        a2     |sbox_178          |  2608|
+|48    |        a3     |sbox_179          |  1053|
+|49    |        a4     |sbox_180          |  1293|
+|50    |      t1       |subbytes_160      |   384|
+|51    |        x0     |sbox_161          |    24|
+|52    |        x1     |sbox_162          |    24|
+|53    |        x10    |sbox_163          |    24|
+|54    |        x11    |sbox_164          |    24|
+|55    |        x12    |sbox_165          |    24|
+|56    |        x13    |sbox_166          |    24|
+|57    |        x14    |sbox_167          |    24|
+|58    |        x16    |sbox_168          |    24|
+|59    |        x2     |sbox_169          |    24|
+|60    |        x3     |sbox_170          |    24|
+|61    |        x4     |sbox_171          |    24|
+|62    |        x5     |sbox_172          |    24|
+|63    |        x6     |sbox_173          |    24|
+|64    |        x7     |sbox_174          |    24|
+|65    |        x8     |sbox_175          |    24|
+|66    |        x9     |sbox_176          |    24|
+|67    |    r3         |rounds_1          |   472|
+|68    |      t0       |KeyGeneration_137 |    88|
+|69    |        a1     |sbox_155          |    22|
+|70    |        a2     |sbox_156          |    22|
+|71    |        a3     |sbox_157          |    22|
+|72    |        a4     |sbox_158          |    22|
+|73    |      t1       |subbytes_138      |   384|
+|74    |        x0     |sbox_139          |    24|
+|75    |        x1     |sbox_140          |    24|
+|76    |        x10    |sbox_141          |    24|
+|77    |        x11    |sbox_142          |    24|
+|78    |        x12    |sbox_143          |    24|
+|79    |        x13    |sbox_144          |    24|
+|80    |        x14    |sbox_145          |    24|
+|81    |        x16    |sbox_146          |    24|
+|82    |        x2     |sbox_147          |    24|
+|83    |        x3     |sbox_148          |    24|
+|84    |        x4     |sbox_149          |    24|
+|85    |        x5     |sbox_150          |    24|
+|86    |        x6     |sbox_151          |    24|
+|87    |        x7     |sbox_152          |    24|
+|88    |        x8     |sbox_153          |    24|
+|89    |        x9     |sbox_154          |    24|
+|90    |    r4         |rounds_2          |   480|
+|91    |      t0       |KeyGeneration_115 |    96|
+|92    |        a1     |sbox_133          |    24|
+|93    |        a2     |sbox_134          |    24|
+|94    |        a3     |sbox_135          |    24|
+|95    |        a4     |sbox_136          |    24|
+|96    |      t1       |subbytes_116      |   384|
+|97    |        x0     |sbox_117          |    24|
+|98    |        x1     |sbox_118          |    24|
+|99    |        x10    |sbox_119          |    24|
+|100   |        x11    |sbox_120          |    24|
+|101   |        x12    |sbox_121          |    24|
+|102   |        x13    |sbox_122          |    24|
+|103   |        x14    |sbox_123          |    24|
+|104   |        x16    |sbox_124          |    24|
+|105   |        x2     |sbox_125          |    24|
+|106   |        x3     |sbox_126          |    24|
+|107   |        x4     |sbox_127          |    24|
+|108   |        x5     |sbox_128          |    24|
+|109   |        x6     |sbox_129          |    24|
+|110   |        x7     |sbox_130          |    24|
+|111   |        x8     |sbox_131          |    24|
+|112   |        x9     |sbox_132          |    24|
+|113   |    r5         |rounds_3          |   480|
+|114   |      t0       |KeyGeneration_93  |    96|
+|115   |        a1     |sbox_111          |    24|
+|116   |        a2     |sbox_112          |    24|
+|117   |        a3     |sbox_113          |    24|
+|118   |        a4     |sbox_114          |    24|
+|119   |      t1       |subbytes_94       |   384|
+|120   |        x0     |sbox_95           |    24|
+|121   |        x1     |sbox_96           |    24|
+|122   |        x10    |sbox_97           |    24|
+|123   |        x11    |sbox_98           |    24|
+|124   |        x12    |sbox_99           |    24|
+|125   |        x13    |sbox_100          |    24|
+|126   |        x14    |sbox_101          |    24|
+|127   |        x16    |sbox_102          |    24|
+|128   |        x2     |sbox_103          |    24|
+|129   |        x3     |sbox_104          |    24|
+|130   |        x4     |sbox_105          |    24|
+|131   |        x5     |sbox_106          |    24|
+|132   |        x6     |sbox_107          |    24|
+|133   |        x7     |sbox_108          |    24|
+|134   |        x8     |sbox_109          |    24|
+|135   |        x9     |sbox_110          |    24|
+|136   |    r6         |rounds_4          |   472|
+|137   |      t0       |KeyGeneration_71  |    88|
+|138   |        a1     |sbox_89           |    22|
+|139   |        a2     |sbox_90           |    22|
+|140   |        a3     |sbox_91           |    22|
+|141   |        a4     |sbox_92           |    22|
+|142   |      t1       |subbytes_72       |   384|
+|143   |        x0     |sbox_73           |    24|
+|144   |        x1     |sbox_74           |    24|
+|145   |        x10    |sbox_75           |    24|
+|146   |        x11    |sbox_76           |    24|
+|147   |        x12    |sbox_77           |    24|
+|148   |        x13    |sbox_78           |    24|
+|149   |        x14    |sbox_79           |    24|
+|150   |        x16    |sbox_80           |    24|
+|151   |        x2     |sbox_81           |    24|
+|152   |        x3     |sbox_82           |    24|
+|153   |        x4     |sbox_83           |    24|
+|154   |        x5     |sbox_84           |    24|
+|155   |        x6     |sbox_85           |    24|
+|156   |        x7     |sbox_86           |    24|
+|157   |        x8     |sbox_87           |    24|
+|158   |        x9     |sbox_88           |    24|
+|159   |    r7         |rounds_5          |   464|
+|160   |      t0       |KeyGeneration_49  |    80|
+|161   |        a1     |sbox_67           |    20|
+|162   |        a2     |sbox_68           |    20|
+|163   |        a3     |sbox_69           |    20|
+|164   |        a4     |sbox_70           |    20|
+|165   |      t1       |subbytes_50       |   384|
+|166   |        x0     |sbox_51           |    24|
+|167   |        x1     |sbox_52           |    24|
+|168   |        x10    |sbox_53           |    24|
+|169   |        x11    |sbox_54           |    24|
+|170   |        x12    |sbox_55           |    24|
+|171   |        x13    |sbox_56           |    24|
+|172   |        x14    |sbox_57           |    24|
+|173   |        x16    |sbox_58           |    24|
+|174   |        x2     |sbox_59           |    24|
+|175   |        x3     |sbox_60           |    24|
+|176   |        x4     |sbox_61           |    24|
+|177   |        x5     |sbox_62           |    24|
+|178   |        x6     |sbox_63           |    24|
+|179   |        x7     |sbox_64           |    24|
+|180   |        x8     |sbox_65           |    24|
+|181   |        x9     |sbox_66           |    24|
+|182   |    r8         |rounds_6          |   464|
+|183   |      t0       |KeyGeneration_27  |    80|
+|184   |        a1     |sbox_45           |    20|
+|185   |        a2     |sbox_46           |    20|
+|186   |        a3     |sbox_47           |    20|
+|187   |        a4     |sbox_48           |    20|
+|188   |      t1       |subbytes_28       |   384|
+|189   |        x0     |sbox_29           |    24|
+|190   |        x1     |sbox_30           |    24|
+|191   |        x10    |sbox_31           |    24|
+|192   |        x11    |sbox_32           |    24|
+|193   |        x12    |sbox_33           |    24|
+|194   |        x13    |sbox_34           |    24|
+|195   |        x14    |sbox_35           |    24|
+|196   |        x16    |sbox_36           |    24|
+|197   |        x2     |sbox_37           |    24|
+|198   |        x3     |sbox_38           |    24|
+|199   |        x4     |sbox_39           |    24|
+|200   |        x5     |sbox_40           |    24|
+|201   |        x6     |sbox_41           |    24|
+|202   |        x7     |sbox_42           |    24|
+|203   |        x8     |sbox_43           |    24|
+|204   |        x9     |sbox_44           |    24|
+|205   |    r9         |rounds_7          |   464|
+|206   |      t0       |KeyGeneration     |    80|
+|207   |        a1     |sbox_23           |    20|
+|208   |        a2     |sbox_24           |    20|
+|209   |        a3     |sbox_25           |    20|
+|210   |        a4     |sbox_26           |    20|
+|211   |      t1       |subbytes          |   384|
+|212   |        x0     |sbox              |    24|
+|213   |        x1     |sbox_8            |    24|
+|214   |        x10    |sbox_9            |    24|
+|215   |        x11    |sbox_10           |    24|
+|216   |        x12    |sbox_11           |    24|
+|217   |        x13    |sbox_12           |    24|
+|218   |        x14    |sbox_13           |    24|
+|219   |        x16    |sbox_14           |    24|
+|220   |        x2     |sbox_15           |    24|
+|221   |        x3     |sbox_16           |    24|
+|222   |        x4     |sbox_17           |    24|
+|223   |        x5     |sbox_18           |    24|
+|224   |        x6     |sbox_19           |    24|
+|225   |        x7     |sbox_20           |    24|
+|226   |        x8     |sbox_21           |    24|
+|227   |        x9     |sbox_22           |    24|
++------+---------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1272.316 ; gain = 633.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 1272.316 ; gain = 506.902
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:10 . Memory (MB): peak = 1272.316 ; gain = 633.836
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.345 . Memory (MB): peak = 1272.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4148 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1272.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1272.316 ; gain = 933.012
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1272.316 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/AliAzak/Desktop/aes_engine_wrapper/aes_engine_wrapper.runs/synth_1/aes_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aes_wrapper_utilization_synth.rpt -pb aes_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 10:15:26 2020...
